@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigationsbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="om-oss.html">Om Oss</a></li>
+            <li><a href="evenemang.html">Evenemang</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            <li><a href="styrelsen.html">Styrelsen</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header med bild -->
+    <header>
+        <img src="images/website_header.webp" alt="Kontakt Header">
+    </header>
+
+    <!-- Kontaktsektion -->
+    <main>
+        <section>
+            <h1>Kontakta Oss</h1>
+            <p>Har du frågor eller behöver hjälp? Du är alltid välkommen att kontakta oss!</p>
+
+            <!-- Kontaktinformation -->
+            <div class="contact-info">
+                <h2>Kontaktuppgifter</h2>
+                <p><strong>Telefon:</strong> 012-345 67 89</p>
+                <p><strong>E-post:</strong> info@minhemsida.se</p>
+                <p><strong>Adress:</strong> Gata 123, 12345 Stad</p>
+            </div>
+
+            <!-- Kontaktformulär -->
+            <div class="contact-form">
+                <h2>Skicka ett Meddelande</h2>
+                <form action="mailto:info@minhemsida.se" method="post" enctype="text/plain">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Meddelande:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Skicka</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 LiUChess</p>
+    </footer>
+
+</body>
+</html>
