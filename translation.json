@@ -1,0 +1,43 @@
+{
+    "sv": {
+      "home": "Hem",
+      "about-us": "Om Oss",
+      "events": "Evenemang",
+      "contact": "Kontakt",
+      "board": "Styrelsen",
+      "who-we-are-title": "Vilka vi är",
+      "who-we-are-text": "Vi är Linköpings universitets nya schackförening som fokuserar på att engagera studenter att spela schack över brädet.",
+      "purpose-title": "Vårt syfte",
+      "purpose-text": "Vi samlar studenter och håller olika typer av evenemang kopplat till schack.",
+      "membership-title": "Medlemskap",
+      "membership-text": "Som medlem i föreningen får du möjlighet att delta i alla våra evenemang som sker under året.",
+      "join-title": "Bli en medlem",
+      "join-text": "Fyll i formuläret för att bli medlem i föreningen gratis. Vi ses vid brädet!",
+      "contact-title": "Kontakta oss",
+      "contact-text": "Om ni har några frågor tveka inte att kontakta oss!",
+      "partnership-title": "Samarbeten och sponsorer",
+      "partnership-text": "LiU Chess samarbetar med Linköpings Allmänna Schacksällskap"
+      
+
+    },
+    "en": {
+      "home": "Home",
+      "about-us": "About Us",
+      "events": "Events",
+      "contact": "Contact",
+      "board": "The Board",
+      "who-we-are-title": "Who We Are",
+      "who-we-are-text": "We are the new chess club at Linköping University, focusing on engaging students to play chess over the board.",
+      "purpose-title": "Our Purpose",
+      "purpose-text": "We gather students and hold various events related to chess.",
+      "membership-title": "Membership",
+      "membership-text": "As a member of the association, you get the opportunity to participate in all our events throughout the year.",
+      "join-title": "Become a Member",
+      "join-text": "Fill in the form to become a member of the association for free. See you at the board!",
+      "contact-title": "Contact Us",
+      "contact-text": "If you have any questions, don't hesitate to contact us!",
+      "partnership-title": "Partnerships and Sponsors",
+      "partnership-text": "LiU Chess collaborates with Linköpings Allmänna Schacksällskap"
+    }
+  }
+  
