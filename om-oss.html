@@ -30,38 +30,31 @@
     <section class="section-dark_blue">
         <div class="content fade-in">
             <h1>Om Oss</h1>
-            <p>Vi är Linköpings universitets nya schackförening som fokuserar på att engagera studenter att spela schack över brädet. LiU Chess vill skapa möjligheter för dess medlemmar att spela och träna schack över brädet. Medlemmar kommer att kunna delta i träningar tävlingar och andra roliga event under året. 
-
+            <p>Vi är Linköpings universitets nya schackförening som fokuserar på att sprida schacket till studenter, 
+                lärare, personal, ungdomar och vuxna. Alla är välkomna, nybörjare som proffs, ung som gammal.
+                LiU Chess vill skapa möjligheter för våra medlemmar att spela och träna schack i dess olika former. 
+                Våra Medlemmar kommer att kunna delta i träningar, live tävlingar och andra roliga event under året.
             </p>
         </div>
     </section>
 
     <!-- Sektion: Bli medlem -->
+
     <section class="section-light_blue">
         <div class="section-form">
             <div class="text fade-in">
-                <h1>Bli en medlem</h1>
-                <p>Fyll i formuläret för att bli medlem i föreningen gratis. Vi ses vid brädet!</p>
+            <h1>Bli medlem i LiU Chess!</h1>
+            <p>Vill du vara med i Linköpings universitets egen schackförening?  
+            Som medlem får du ta del av turneringar, träningskvällar och en härlig gemenskap med andra schackintresserade.</p>
+            
+            <p>Det är helt gratis att bli medlem! Ladda ner vår medlemsblankett nedan, fyll i den och skicka sedan den ifyllda blanketten till  
+            <a href="mailto:liuchess.ordf@gmail.com" class="contact-link">liuchess.ordf@gmail.com</a>.</p>
             </div>
-            <div class="form-container">
-                <form action="/submit" method="POST">
-                    
-                    <!-- E-postadress fält -->
-                    <label for="email">Din e-postadress *</label>
-                    <input type="email" id="email" name="email" required placeholder="">
-                    
-                    <!-- Hur hittade du oss fält (fritext) -->
-                    <label for="how_found">Hur hittade du oss? </label>
-                    <textarea id="how_found" name="how_found" required placeholder=""></textarea>
 
-                    <!-- År fält -->
-                    <label for="year">Vilket år går du? </label>
-                    <input type="text" id="year" name="year" required placeholder="">
-
-                    <!-- Skicka knapp -->
-                    <button type="submit">Skicka ansökan</button>
-                </form>
-            </div>
+            <!-- Nedladdningsknapp -->
+            <a href="files/medlemskap_liu_chess.pdf" download class="download-button">
+            📄 Ladda ner medlemsblankett
+            </a>
         </div>
     </section>
 
@@ -70,8 +63,22 @@
     <section class="section-dark_blue">
         <div class="content fade-in">
             <h1>Kontakta oss</h1>
-            <p>Om ni har några frågor tveka inte att kontakta oss!</p>
-            <a href="mailto:exempel@mail.com" class="contact-link">exempel@mail.com</a>
+            <p>Har du frågor eller vill komma i kontakt med oss? Välj den adress som passar bäst:</p>
+
+            <ul class="contact-list">
+            <li>
+                <strong>Event & aktiviteter:</strong> 
+                <a href="mailto:liuchess.event@gmail.com" class="contact-link">liuchess.event@gmail.com</a>
+            </li>
+            <li>
+                <strong>Marknadsföring & samarbeten:</strong> 
+                <a href="mailto:liuchess.marketing@gmail.com" class="contact-link">liuchess.marketing@gmail.com</a>
+            </li>
+            <li>
+                <strong>Ordförande & övriga frågor:</strong> 
+                <a href="mailto:liuchess.ordf@gmail.com" class="contact-link">liuchess.ordf@gmail.com</a>
+            </li>
+            </ul>
         </div>
     </section>
 
@@ -79,12 +86,13 @@
     <!-- Sektion: Sammarbeten -->
     <section class="section-blue">
         <div class="content fade-in">
-            <h1>Sammarbeten och sponsorer</h1>
+            <h1>Samarbeten och sponsorer</h1>
             <p>LiU Chess samarbetar med Linköpings Allmänna Schacksällskap</p>
-            
-            <!-- Lägg till loggan här -->
+            <!-- Klickbar logga -->
             <div class="partnership-logo">
-                <img src="images\LASSlogga_web.jpg" alt="Linköpings Allmänna Schacksällskap Logo" class="logo">
+            <a href="https://lass.schack.se" target="_blank" rel="noopener noreferrer">
+                <img src="images/LASSlogga_web.jpg" alt="Linköpings Allmänna Schacksällskap Logo" class="clickable-logo">
+            </a>
             </div>
         </div>
     </section>
@@ -97,6 +105,6 @@
     </footer>
 
     <!-- Länka till animations.js -->
-    <script src="JS/animations.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>

@@ -1,190 +1,59 @@
-/* Grundläggande stilinställningar */
-body, html {
-    height: 100%; /* Sätt höjden på hela sidan till 100% */
-    margin: 0; /* Ta bort standardmarginaler */
-    padding: 0; /* Ta bort standardpadding */
+/* ===========================
+   1. Grundinställningar / Reset
+   =========================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column; /* Gör så att element staplas vertikalt */
+    flex-direction: column;
+    font-family: 'Helvetica', 'Arial', sans-serif; /* Global font */
 }
 
+/* ===========================
+   2. Header & Logotyp
+   =========================== */
 header {
     position: relative;
     width: 100%;
-    text-align: center; /* Centrerar bilden horisontellt */
-    background-color: #ffffff; /* Fyll ut bakgrunden med vitt */
+    text-align: center;
+    background-color: #ffffff;
 }
 
 header img {
-    width: 150px; /* Standardbredd för mindre skärmar */
-    height: auto; /* Bevara bildens proportioner */
-    margin: 10px auto; /* Lägger till lite avstånd och centrerar bilden */
+    width: 150px;
+    height: auto;
+    margin: 10px auto;
 }
 
-/* Fade-in effekter */
-.fade-in {
-    opacity: 0; /* Bör vara osynlig från början */
-    transform: scale(0.9); /* Bör vara något mindre från början */
-    transition: opacity 1s ease, transform 1s ease; /* Animering för både opacitet och förstoring */
-}
-
-/* När elementet blir synligt */
-.fade-in.visible {
-    opacity: 1; /* Fullt synlig */
-    transform: scale(1); /* Förstoringseffekt till normal storlek */
-}
-
-/* För att styla länken */
-.contact-link {
-    color: #00b1ff; /* Färgen som används i resten av texten */
-    font-weight: bold; /* Fetstil */
-    text-decoration: underline; /* Understruken */
-}
-
-/* Stil för loggan */
 .partnership-logo {
-    text-align: center; /* Centrerar loggan */
-    margin-top: 20px; /* Lägg till lite avstånd ovanför loggan */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .partnership-logo .logo {
-    max-width: 200px; /* Begränsa storleken på loggan (justera efter behov) */
-    height: auto; /* Bevara proportionerna på loggan */
-}
-
-
-
-/* Sektioner */
-section {
-    flex: 1; /* Gör så att sektionen tar upp allt utrymme som är kvar mellan header och footer */
-    padding: 20px;
-}
-
-.section-white {
-    background-color: #FFFFFF; /* Vit bakgrund */
-    padding: 50px 20px;
-    text-align: center;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-}
-
-/* Sektion med bild till vänster */
-.section-white-with-image .content {
-    display: flex; /* Gör sektionen till en flex-container */
-    justify-content: space-between; /* Dela upp utrymmet mellan vänster och höger innehåll */
-    align-items: center; /* Centrera vertikalt */
-}
-
-/* Vänstra innehållet (texten) */
-.section-white-with-image .left-content {
-    flex: 1;
-    padding-right: 20px;
-}
-
-/* För sektionen med bild till höger */
-.section-white-with-image .right-content img {
-    width: 400px;  /* Fixa bildens bredd till en specifik storlek */
-    height: auto;  /* Bevara proportionerna */
-}
-
-
-
-/* Gör bilden responsiv så att den inte blir för stor */
-.section-white-with-image .right-content img {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
-
-.section-dark_blue {
-    background-color: #3e588d; /* Mörkblå bakgrund */
-    color: #00b1ff; /* Färg på text */
-    padding: 50px 20px;
-    text-align: center;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-}
-
-.section-blue {
-    background-color: #8da6c7; /* Blå bakgrund */
-    color: #05499b;
-    padding: 50px 20px;
-    text-align: center;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-}
-
-.section-light_blue {
-    background-color: #a6bad3; /* Ljusblå bakgrund */
-    padding: 50px 20px;
-    text-align: center;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-}
-
-/* För rubriker och text i sektionerna */
-.section-light h1, .section-dark h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.section-light p, .section-dark p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6; /* För bättre läsbarhet */
-}
-
-/* Sektion med formulär */
-.section-form {
-    background-color: #f9f9f9; /* Ljus bakgrund för sektionen */
-    padding: 50px 20px;
-    display: flex;
-    justify-content: space-between; /* Dela upp sektionen i två delar */
-    align-items: center; /* Centrerar innehållet vertikalt */
-}
-
-.section-form .text {
-    flex: 1;
-    padding-right: 20px; /* Lägger till lite avstånd på höger sida */
-    font-family: 'Verdana', sans-serif;
-}
-
-.section-form .form-container {
-    flex: 1;
-    max-width: 500px; /* Begränsar bredden på formuläret */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skugga för att ge djup */
-}
-
-.section-form .form-container input,
-.section-form .form-container textarea,
-.section-form .form-container button {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.section-form .form-container button {
-    background-color: #007BFF;
-    color: white;
+/* ===========================
+   2b. Klickbara loggor (generell stil)
+   =========================== */
+.clickable-logo {
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
-.section-form .form-container button:hover {
-    background-color: #0056b3;
+.clickable-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px; /* Ger lite mer utrymme i footern */
-    width: 100%;
-}
-
-/* Navigationsbar */
+/* ===========================
+   3. Navigationsbar
+   =========================== */
 nav {
     background-color: white;
     padding: 10px 0;
@@ -195,7 +64,7 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -220,21 +89,267 @@ nav ul li a:hover {
 
 nav ul li a.active {
     font-weight: bold;
-    color: #007BFF; /* Blå färg för att markera den aktiva sidan */
-    border-bottom: 2px solid #007BFF; /* Understrykning för aktiv länk */
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
 }
 
-/* Huvudrubrik */
-h1 {
+/* ===========================
+   4. Sektioner (generellt)
+   =========================== */
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Bakgrundsfärg & text för olika sektioner */
+.section-white {
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-dark_blue {
+    background-color: #3e588d;
+    color: #00b1ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-blue {
+    background-color: #8da6c7;
+    color: #05499b;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-light_blue {
+    background-color: #a6bad3;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Rubriker och text i sektioner */
+section h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-/* Responsiv design */
+section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
 
-/* För små skärmar (upp till 600px) */
+/* ===========================
+   5. Sektioner med bilder
+   =========================== */
+
+/* Wit sektion med grå boxar runt. Text till vänster och bild till höger */
+.section-white-with-image .content {
+    display: flex;
+    justify-content: center;  /* centrera horisontellt hela raden */
+    align-items: flex-start;  /* låt texten bestämma höjd */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.left-content {
+    flex: 1 1 auto;         /* textens höjd bestämmer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertikal centrering inom left-content */
+    text-align: center;      /* centrera all text horisontellt */
+}
+
+.right-content {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;     /* centrera bilden vertikalt */
+    justify-content: center; /* centrera horisontellt */
+}
+
+.right-content img {
+    display: block;
+    height: auto;   /* JS styr höjd */
+    width: auto;    /* JS styr bredd */
+}
+
+/* ===========================
+   Responsivt: små skärmar
+   =========================== */
+@media (max-width: 768px) {
+    .section-white-with-image .content {
+        flex-direction: column;   /* staplar text + bild vertikalt */
+        align-items: center;      /* centrera innehållet */
+    }
+
+    .right-content img {
+        height: auto;             /* naturlig höjd */
+        width: 100%;              /* fyller inte över skärmen */
+        max-width: 100%;
+    }
+}
+
+/* ===========================
+   6. Fade-in effekter
+   =========================== */
+.fade-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ===========================
+   7. Länkar
+   =========================== */
+.contact-link {
+    color: #00b1ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ===========================
+   8. Kontaktsektion (ny)
+   =========================== */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+.contact-list li {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    color: #fff; /* vit text mot mörkblå bakgrund */
+}
+
+.contact-list strong {
+    color: #00b1ff; /* framhäv kategori i ljusblått */
+}
+
+.contact-list a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact-list a:hover {
+    color: #00b1ff;
+}
+
+/* ===========================
+   9. Formulärsektion
+   =========================== */
+.section-form {
+  background-color: #f9f9f9;
+  padding: 60px 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.section-form .text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.section-form .text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #007acc, #005fa3);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.download-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+/* ===========================
+   10. Footer
+   =========================== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* ===========================
+   11. Event-översikt
+   =========================== */
+.event-overview {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.overview-category {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.overview-category h2 {
+    margin-bottom: 0.5rem;
+}
+
+.overview-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.overview-category li {
+    margin: 0.3rem 0;
+}
+
+.overview-category a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+.overview-category a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   12. Responsiv design
+   =========================== */
+/* Små skärmar (upp till 600px) */
 @media (max-width: 600px) {
-    /* Navigationsbar: Ställer om till vertikal layout */
     nav ul {
         display: flex;
         flex-direction: column;
@@ -242,7 +357,7 @@ h1 {
     }
 
     nav ul li {
-        margin: 5px 0; /* Minskar avståndet mellan länkarna */
+        margin: 5px 0;
     }
 
     nav ul li a {
@@ -250,36 +365,35 @@ h1 {
     }
 
     section {
-        padding: 10px; /* Minskar padding för mindre skärmar */
+        padding: 10px;
     }
 
     h1 {
-        font-size: 1.8em; /* Anpassa huvudrubrikens storlek */
-        margin-bottom: 15px; /* Minska marginalen under rubriken */
+        font-size: 1.8em;
+        margin-bottom: 15px;
     }
 
     .section-form {
-        flex-direction: column; /* Ändra till vertikal layout för formulärsektionen */
+        flex-direction: column;
     }
 
     .section-form .text {
         padding-right: 0;
-        margin-bottom: 20px; /* Lägg till avstånd mellan text och formulär */
+        margin-bottom: 20px;
     }
 
     .section-form .form-container {
-        padding: 15px; /* Minska padding för formuläret */
+        padding: 15px;
     }
 
     footer {
-        padding: 15px; /* Anpassa footerns padding på små skärmar */
-        font-size: 14px; /* Gör texten lite mindre */
+        padding: 15px;
+        font-size: 14px;
     }
 }
 
-/* För mellanstora skärmar (600px till 1024px) */
+/* Mellanstora skärmar (600px till 1024px) */
 @media (min-width: 600px) and (max-width: 1024px) {
-    /* Förbättra layout för surfplattor */
     .section-form {
         flex-direction: column;
         align-items: flex-start;
@@ -290,24 +404,23 @@ h1 {
     }
 
     nav ul li {
-        margin: 0 15px; /* Anpassa avstånd mellan länkar */
+        margin: 0 15px;
     }
 }
 
-/* För stora skärmar (> 1024px) */
+/* Stora skärmar (>1024px) */
 @media (min-width: 1024px) {
-    /* Ta bort maxbredden och låt sektionerna fylla hela bredden */
     body {
         max-width: 100%;
         margin: 0;
     }
 
     header img {
-        width: 300px; /* Förstorad bild för stora skärmar */
+        width: 300px;
     }
 
-    .section-light_grey, .section-dark_grey, .section-white {
-        padding: 100px 50px; /* Extra spacing för bättre balans */
+    .section-white, .section-light_grey, .section-dark_grey {
+        padding: 100px 50px;
     }
 
     .section-form {
@@ -315,28 +428,28 @@ h1 {
     }
 
     .section-form .form-container button {
-        font-size: 1.2em; /* Öka storleken på knappar */
-        padding: 15px; /* Mer padding för större klickyta */
+        font-size: 1.2em;
+        padding: 15px;
     }
 
     .section-form .text {
-        font-size: 1.2em; /* Större text för läsbarhet */
+        font-size: 1.2em;
     }
 
     nav ul li {
-        margin: 0 40px; /* Öka avstånd mellan navigationslänkar */
+        margin: 0 40px;
     }
 
     nav ul li a {
-        font-size: 18px; /* Gör länkarna större */
-        padding: 10px 20px; /* Öka padding för bättre klickyta */
+        font-size: 18px;
+        padding: 10px 20px;
     }
 
     h1 {
-        font-size: 3em; /* Större rubriker för stora skärmar */
+        font-size: 3em;
     }
 
     p {
-        font-size: 1.4em; /* Öka storleken på brödtexten */
+        font-size: 1.4em;
     }
 }

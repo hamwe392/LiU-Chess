@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Oss</title>
+    <title>Evenemang</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arial&display=swap">
+    <style>
+        /* Stil för datum/plats-rutor */
+        .event-info {
+            font-size: 0.95rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .overview-category h2 {
+            margin-top: 1.5em;
+            border-bottom: 2px solid #999;
+            padding-bottom: 5px;
+        }
+        .overview-category h3 {
+            margin-top: 1em;
+            font-weight: normal;
+            color: #555;
+        }
+        .overview-category ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .overview-category li {
+            margin: 5px 0;
+        }
+        .overview-category a {
+            text-decoration: none;
+            color: #0055aa;
+        }
+        .overview-category a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
     <!-- Navigationsbar -->
     <nav>
@@ -20,101 +53,106 @@
         </ul>
     </nav>
 
-    <!-- Header med bild -->
+    <!-- Header -->
     <header>
         <img class="fade-in" src="images/chess_club_logo.png" alt="Website Header">
     </header>
 
-
-    <!-- Sektion: Kommande evenemang -->
-    <section class="section-dark_blue">
-        <div class="content fade-in">
-            <h1>Kommande Evenemang</h1>
-            <p>Vi publicerar alla evenemang och anmälningsformulär här på hemsidan så fort ett datum är satt. 
-                Medlemmar får även mail om kommande evenemang.</p>
-        </div>
-    </section>
-
-
-    <!-- Närmaste evenemang -->
-    <section class="section-white-with-image">
-        <div class="content fade-in">
-            <div class="left-content">
-                <h1>Sektionsschack xx/xx-2025</h1>
-                <p>Som vårt första event kommer LiU Chess anordna en turnering mellan sektionerna.
-                Vid anmälan registrerar man vilken sektion man spelar för.
-                Varje vinst räknas sedan till sektionens totala poäng etc etc...</p>
-            </div>
-            <div class="right-content">
-                <img src="images\chess_tourney_logo.webp" alt="Eventbild">
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- Sektion: Bli medlem -->
+    <!-- Översikt över evenemang -->
     <section class="section-light_blue">
-        <div class="section-form">
-            <div class="text fade-in">
-                <h1>Bli en medlem</h1>
-                <p>Fyll i formuläret för att bli medlem i föreningen gratis. Vi ses vid brädet!</p>
-            </div>
-            <div class="form-container">
-                <form action="/submit" method="POST">
-                    
-                    <!-- E-postadress fält -->
-                    <label for="email">Din e-postadress *</label>
-                    <input type="email" id="email" name="email" required placeholder="">
-                    
-                    <!-- Hur hittade du oss fält (fritext) -->
-                    <label for="how_found">Hur hittade du oss? </label>
-                    <textarea id="how_found" name="how_found" required placeholder=""></textarea>
+      <div class="content fade-in">
+        <h1>Evenemang</h1>
+        <p>Klicka på ett evenemang för att läsa mer.</p>
 
-                    <!-- År fält -->
-                    <label for="year">Vilket år går du? </label>
-                    <input type="text" id="year" name="year" required placeholder="">
+        <div class="event-overview">
+          <!-- Enstaka datum -->
+          <div class="overview-category">
+            <h2>Enstaka datum / Specialevenemang</h2>
+            
+            <h3>Kommande</h3>
+            <ul>
+              <li><a href="#lansering2025">Lanseringsevent – 27/08/2025</a></li>
+            </ul>
 
-                    <!-- Skicka knapp -->
-                    <button type="submit">Skicka ansökan</button>
-                </form>
-            </div>
+            <h3>Tidigare</h3>
+            <ul>
+              <!-- Tidigare enstaka event kan läggas här -->
+            </ul>
+          </div>
+
+          <!-- Återkommande -->
+          <div class="overview-category">
+            <h2>Återkommande aktiviteter</h2>
+            <ul>
+              <li><a href="#onsdagstraning2025">Onsdagsträning – Från 03/09/2025</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
-
-    <!-- Sektion: Kontakta oss -->
-    <section class="section-dark_blue">
-        <div class="content fade-in">
-            <h1>Kontakta oss</h1>
-            <p>Om ni har några frågor tveka inte att kontakta oss!</p>
-            <a href="mailto:exempel@mail.com" class="contact-link">exempel@mail.com</a>
+    <!-- Evenemang: Lanseringsevent -->
+    <section id="lansering2025" class="section-white-with-image">
+      <div class="content fade-in">
+        <div class="left-content">
+          <h1>Lanseringsevent</h1>
+          <div class="event-info">
+            <strong>Datum:</strong> Onsdag 27 augusti 2025<br>
+            <strong>Plats:</strong> Linköpings universitet, C-huset<br>
+            <strong>Tid:</strong> 12:00 – 17:00
+          </div>
+          <p>
+            Kom och fira klubbens lansering! Träffa medlemmar, delta i roliga aktiviteter och lär dig mer om våra framtida evenemang och träningar. Alla är välkomna!
+          </p>
         </div>
+        <div class="right-content">
+          <img src="images/Pairchess_1.jpg" alt="Eventbild">
+        </div>
+      </div>
     </section>
 
+    <!-- Evenemang: Onsdagsträning -->
+    <section id="onsdagstraning2025" class="section-white-with-image">
+      <div class="content fade-in">
+        <div class="left-content">
+          <h1>Onsdagsträning</h1>
+          <div class="event-info">
+            <strong>Datum:</strong> Varje onsdag från 3 september 2025<br>
+            <strong>Plats:</strong> Linköpings universitet, C-huset<br>
+            <strong>Tid:</strong> 17:30 – 19:00
+          </div>
+          <p>
+            Delta i vår återkommande träning varje onsdag! Alla medlemmar är välkomna att förbättra sina schackkunskaper i en vänlig och lärorik miljö.
+          </p>
+        </div>
+        <div class="right-content">
+          <img src="images/chess_game_1.jpg" alt="Eventbild">
+        </div>
+      </div>
+    </section>
 
     <!-- Sektion: Sammarbeten -->
     <section class="section-blue">
         <div class="content fade-in">
-            <h1>Sammarbeten och sponsorer</h1>
+            <h1>Samarbeten och sponsorer</h1>
             <p>LiU Chess samarbetar med Linköpings Allmänna Schacksällskap</p>
-            
-            <!-- Lägg till loggan här -->
+            <!-- Klickbar logga -->
             <div class="partnership-logo">
-                <img src="images\LASSlogga_web.jpg" alt="Linköpings Allmänna Schacksällskap Logo" class="logo">
+            <a href="https://lass.schack.se" target="_blank" rel="noopener noreferrer">
+                <img src="images/LASSlogga_web.jpg" alt="Linköpings Allmänna Schacksällskap Logo" class="clickable-logo">
+            </a>
             </div>
         </div>
     </section>
-
-
 
     <!-- Footer -->
     <footer>
         <p>© 2025 LiUChess</p>
     </footer>
 
-    <!-- Länka till animations.js -->
-    <script src="JS/animations.js"></script>
+    <!-- JS -->
+    <script src="image_height.js"></script>
+    <script src="animations.js"></script>
+
 </body>
 </html>
