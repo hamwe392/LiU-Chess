@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styrelsen</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arial&display=swap">
+    <style>
+        /* Kort för styrelsemedlemmar */
+        .board-card {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.2em;
+            margin: 1.5em auto;
+            max-width: 400px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .board-card h2 {
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            color: #003366; /* samma färg som på kontaktsidan */
+        }
+
+        .board-card a {
+            color: #0055aa;
+            text-decoration: none;
+        }
+
+        .board-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Centrerad rubrik */
+        .board-section h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 2em;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigationsbar -->
@@ -19,16 +56,52 @@
         </ul>
     </nav>
 
-    <!-- Header med bild -->
+    <!-- Header -->
     <header>
         <img class="fade-in" src="images/chess_club_logo.png" alt="Website Header">
     </header>
 
-
-    <!-- Första sektion: Kommer snart -->
-    <section class="section-dark_blue">
+    <!-- Styrelsesektion med samma blå bakgrund som evenemang -->
+    <section class="section-light_blue board-section">
         <div class="content fade-in">
-            <h1>Kommer snart</h1>
+            <h1>Styrelsen</h1>
+
+            <!-- Ordförande -->
+            <div class="board-card">
+                <h2>Ordförande</h2>
+                <strong>Axel Lorenzo Johansson</strong><br>
+                Telefon: <a href="tel:+46763207059">076-320 70 59</a><br>
+                E-post: <a href="mailto:liuchess.ordf@gmail.com">liuchess.ordf@gmail.com</a>
+            </div>
+
+            <!-- Kassör -->
+            <div class="board-card">
+                <h2>Kassör</h2>
+                <strong>Martin Kylinger</strong>
+            </div>
+
+            <!-- Sekreterare -->
+            <div class="board-card">
+                <h2>Sekreterare</h2>
+                <strong>Christoffer Martinelle</strong><br>
+                Telefon: <a href="tel:+46723351404">072-335 14 04</a><br>
+                E-post: <a href="mailto:liuchess.sekr@gmail.com">liuchess.sekr@gmail.com</a>
+            </div>
+
+            <!-- Events & Marknadsföring -->
+            <div class="board-card">
+                <h2>Events & Marknadsföringsansvarig</h2>
+                <strong>Gabriella Valenzuela Johansson</strong><br>
+                Telefon: <a href="tel:+46732330214">073-233 02 14</a><br>
+                E-post: <a href="mailto:liuchess.event@gmail.com">liuchess.event@gmail.com</a>
+            </div>
+
+            <!-- Styrelseledamot -->
+            <div class="board-card">
+                <h2>Styrelseledamot</h2>
+                <strong>Sam Grundel</strong>
+            </div>
+
         </div>
     </section>
 
@@ -37,7 +110,8 @@
         <p>© 2025 LiUChess</p>
     </footer>
 
-    <!-- Länka till animations.js -->
+    <!-- JS -->
+    <script src="image_height.js"></script>
     <script src="animations.js"></script>
 </body>
 </html>

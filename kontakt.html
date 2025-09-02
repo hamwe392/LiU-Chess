@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Hemsida</title>
+    <title>Kontakt</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arial&display=swap">
-</head>
+    <style>
+        .contact-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.2em;
+            margin: 1.5em auto;   /* Gör att rutan hamnar i mitten */
+            max-width: 400px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;   /* Gör att texten centreras i rutan */
+        }
 
+        .contact-card h2 {
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            color: #003366;
+        }
+        .contact-card a {
+            color: #0055aa;
+            text-decoration: none;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        .contact-list strong {
+            color: #003366;
+            font-weight: bold;
+        }
+        .contact-list li {
+            margin: 0.8em 0;
+        }
+        .contact-link {
+            color: #0055aa;
+            text-decoration: none;
+        }
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+        .partnership-logo {
+            margin-top: 1em;
+        }
+        .partnership-logo img {
+            max-width: 200px;
+            transition: transform 0.2s;
+        }
+        .partnership-logo img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
 <body>
     <!-- Navigationsbar -->
     <nav>
@@ -20,15 +70,53 @@
         </ul>
     </nav>
 
-    <!-- Header med bild -->
+    <!-- Header -->
     <header>
         <img class="fade-in" src="images/chess_club_logo.png" alt="Website Header">
     </header>
 
-    <!-- Första sektion: Kommer snart -->
-    <section class="section-dark_blue">
+    <!-- Kontaktsektion -->
+    <section class="section-light_blue">
         <div class="content fade-in">
-            <h1>Kommer snart</h1>
+            <h1>Kontakta oss</h1>
+            <p>
+                Har du frågor om vår verksamhet, vill börja spela schack eller bli medlem? 
+                Tveka inte att kontakta oss!
+            </p>
+
+            <!-- Christoffers kort -->
+            <div class="contact-card">
+                <h2>Sekreterare / Admin</h2>
+                <strong>Christoffer Martinelle</strong><br>
+                Telefon: <a href="tel:+46723351404">072-335 14 04</a><br>
+                E-post: <a href="mailto:liuchess.sekr@gmail.com">liuchess.sekr@gmail.com</a>
+            </div>
+
+            <!-- Övriga kontaktvägar -->
+            <h2>Övriga kontaktvägar</h2>
+            <ul class="contact-list">
+                <li>
+                    <strong>Frågor om marknadsföring och evenemang:</strong><br>
+                    <a href="mailto:liuchess.event@gmail.com" class="contact-link">liuchess.event@gmail.com</a>
+                </li>
+                <li>
+                    <strong>Samarbeten, träning och övriga frågor:</strong><br>
+                    <a href="mailto:liuchess.sekr@gmail.com" class="contact-link">liuchess.sekr@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sektion: Samarbeten -->
+    <section class="section-blue">
+        <div class="content fade-in">
+            <h1>Samarbeten och sponsorer</h1>
+            <p>LiU Chess samarbetar med Linköpings Allmänna Schacksällskap</p>
+            <div class="partnership-logo">
+                <a href="https://lass.schack.se" target="_blank" rel="noopener noreferrer">
+                    <img src="images/LASSlogga_web.jpg" alt="Linköpings Allmänna Schacksällskap Logo" class="clickable-logo">
+                </a>
+            </div>
         </div>
     </section>
 
@@ -37,7 +125,8 @@
         <p>© 2025 LiUChess</p>
     </footer>
 
-    <!-- Länka till animations.js -->
+    <!-- JS -->
+    <script src="image_height.js"></script>
     <script src="animations.js"></script>
 </body>
 </html>
